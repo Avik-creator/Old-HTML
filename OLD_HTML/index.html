@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>My First Website</title>
+</head>
+<!--
+<body style="background-color: black;">
+        <!-- This Is a Comment -->
+    <!--audio control autoplay loop src="This is Not a Christmas Song - NEFFEX.mp3">
+        For Playing Audio.
+        <video controls autoplay muted loop width="500">
+            <source src = Video File>
+        </video>
+    </audio -->
+    <!--
+    <p>This is a Normal Text</p>
+    <p>This is a <b>bold</b></p>
+    <p>This is a <i>Italic</i></p>
+    <p>This is a <big>big</big></p>
+    <p>This is a <small>small</small></p>
+    <p>This is a <sub>subscript</sub></p>
+    <p>This is a <sup>superscript</sup></p>
+    <p>This is a <ins>inserted</ins></p>
+    <p>This is a <del>deleted</del></p>
+    <p>This is a <mark>marked</mark></p>
+    -->
+    <!--
+    <h1>Unordered List</h1>
+    <ul>
+        <li>Pizza Dough</li>
+        <li>Tomato Sauce
+            <ul>
+                <li>Topping</li>
+                <li>Cheese</li>
+            </ul>
+        </li>
+    <h2>Ordered List</h2>
+    <ol type="A">
+        <li>Pizza Dough</li>
+        <li>Tomato Sauce</li>
+    </ol>
+    <h3>Description List</h3>
+    <dl>
+        <dt>Pizza Dough</dt> <!--Term-->
+        <!--
+        <dt>Tomato Sauce</dt>
+        <dd>This is the base of a Pizza</dd>
+    </dl>
+    -->
+    <!--
+    <h1>Store Hours</h1>
+    <table bgcolor="orange" width="200">
+        <tr bgcolor="red" align="center">
+            <th width="100">Sunday</th>
+            <th width="100">Rest of the Days</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>Closed</td>
+            <td>9-5</td>
+        </tr>
+    </table>
+--<
+    <h1 style="color: red;">Hello!</h1>
+    <h2 style="color: rgb(5,240,233);">Hello!</h2>
+    <h3 style="color: mintcream;">Hello!</h3>
+    <p style="color: #28f005; background-color: #222222;">Lorem ipsum dolor sit amet consectetur,
+     adipisicing elit. Maiores, 
+     numquam quia mollitia non, 
+     amet officiis, a saepe voluptatem eveniet deserunt consequuntur qui ab blanditiis distinctio recusandae maxime velit perspiciatis ducimus.</p>
+</body>
+-->
+<body>
+    <!--Span: Adds Markup to text or portion of document-->
+    <!--div: defines a division of a document-->
+    <!--
+    <h1>Hello!</h1>
+    <div style="background-color: #444444;">
+    <p><span style="color: red"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span> Nemo, quibusdam eius? Veritatis ipsam,
+         deserunt itaque adipisci labore reprehenderit quod,
+         commodi culpa, quis magnam neque tempora ut amet? Cupiditate, velit fuga!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptatem, maiores asperiores id, atque nam harum corrupti saepe officiis iure voluptas ab similique tempore consequatur. 
+        Non saepe aut reiciendis voluptatum.
+    </p>
+    </div>
+-->
+<!--Meta: It is used to give information to the webbrowser
+IT is implemented bt <meta> is has no closing syntax-->
+<!-- iframe: embed content from another source into an HTML document
+    ex. used for ads, used in many hacking techniques-->
+    <!--iframe style="border: cornsilk;" src="https://www.bing.com" width="500" height="500"-->
+    <!--
+    <a href="https://www.google.com">
+        <button style="background-color: #333333;color:#00FF00;border-radius: 100px";>click me</button>
+    </a>
+
+<button onclick="Dosomething()" style="background-color: #333333;color:#00FF00;border-radius: 100px";>click me</button>
+<p id="test">Hello</p>
+<script>
+    function Dosomething() {
+        document.getElementById("test").innerHTML = "Goodbye"
+    }
+</script>
+-->
+        <form>
+            <!--In Form:
+            action="Action_page.php" to send data to php page
+            method="GET": It stores data to the website url.-->
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Rick">
+            </div>
+            <br>
+            <div>
+                <label for="fname">Last Name</label>
+                <input type="text" id="fname" placeholder="Asteley">
+            </div>
+            <br>
+            <div>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Rickrolling" required>
+            </div>
+            <br>
+            <div>
+                <label for="title">Title:</label>
+
+                <label>Mr.</label>
+                <input type="radio" name="title" value="Mr.">
+
+                <label>Mrs.</label>
+                <input type="radio">
+
+                <label>Noob</label>
+                <input type="radio">
+
+            </div>
+            <br>
+            <div>
+                <label for="payment">Payment:</label>
+                <select id="payment" name="payment">
+                    <option value="visa">Visa</option>
+                    <option value="Mastercard">MasterCard</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="reset">
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+</body>
+
+</html>

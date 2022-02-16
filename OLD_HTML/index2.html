@@ -1,0 +1,511 @@
+
+    <!--Important to include rel type href as it is considered good practice-->
+   <!--
+   <style>
+    p{This changes both the paragraph properties
+        background-color: aqua;
+        color: black;
+    }
+   </style>To give specific paragraph its
+   specific color we have to use id.
+       <style>
+            #id{
+                background
+            }
+        </style>
+        we can also use class to do the above step. It will cover
+        all the text in class.
+        p.classname
+        h,p{
+            It will target all header and paragraph.
+        }
+   }
+-->
+<!--
+</head>
+<body>
+    <h1>Margin Demo</h1>
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid quod recusandae error doloremque omnis magnam fuga ea explicabo ipsam incidunt necessitatibus, tempora similique nostrum cum est vero mollitia repellendus?
+    </p>
+    <br>
+    <p id="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id reprehenderit sapiente excepturi consequatur voluptatibus nemo ipsa illo sequi suscipit. Similique animi aspernatur debitis ut. Illo beatae repellat accusantium ea.
+    </p>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+    font-family: 'Roboto', sans-serif;
+}
+title{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: disc;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: double;
+    color: black;
+}
+p{
+    color: black;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-left: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 50%;
+    padding:50px;
+}
+.btn{
+    display: inline-block;
+    background: orange;
+    color:black;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 30px;
+    transition: all;
+transition-duration: 10s;
+}
+.btn hover{
+    background: black;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+    margin-top: 70px;
+}
+.categories{
+    margin: 70px 0px;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+}
+.col-3 img{
+    width: 100%;
+}
+.smallcontainer{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color:#555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.col-4:hover{
+transform: translateY(-5px);
+}
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+small{
+    color:#555;
+}
+.testimonial .col-3{
+    text-align: centre;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0,1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+.footer{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: white;
+}
+.footer h3{
+    color:#fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*---------media query--------*/
+@media only screen and (max-width: 800px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: black;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bully Store | Ecommerce Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="header">
+
+    <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <img src="dance3-01.png" width="250px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+        <img src="istockphoto-1142859120-170667a.jpeg" width="30px" height="30px">
+        <img src="3329671.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Give Your Self New Memes</h1>
+            <p>You Want Memes. Get Religion.
+            </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="PngItem_54647.png">
+        </div>
+    </div>
+    </div>
+
+<!--Featured categories-->
+ <div class="categories">
+     <div class="smallcontainer">
+     <div class="row">
+         <div class="col-3">
+             <img src="tobey-maguire-spider-man.png">
+         </div>
+         <div class="col-3">
+             <img src="Memes_to.jpeg">
+         </div>
+         <div class="col-3">
+             <img src="Original_Doge_meme.jpeg">
+         </div>
+     </div>
+     </div>
+ </div>
+ <!----------Featured Memes--------------->
+ <div class="small-container">
+     <h2 class="title">Welcome To Bully Store</h2>
+     <h2 class = "title">Featured Memes</h2>
+     <div class="row">
+         <div class="col-4">
+             <img src="meme1.webp">
+             <h4>Thor with Nokia Is Invincible.</h4>
+             <p>$500.00</p>
+         </div>
+         <div class="col-4">
+            <img src="meme2.webp">
+            <h4>Be Like Bill.</h4>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="meme3.webp">
+            <h4>Having Tension Makes You Go Bald.</h4>
+            <p>$525.00</p>
+        </div>
+        <div class="col-4">
+            <img src="meme5.webp">
+            <h4>Nokia Vs Iphone.</h4>
+            <p>$5255.00</p>
+        </div>
+        <div class="col-4">
+            <img src="meme6.webp">
+            <h4>Dont Look Away With Your Girlfriend.</h4>
+            <p>$50,000.00</p>
+        </div>
+     </div>
+ </div>
+ <!--Offer-->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="maxresdefault.jpeg" class="offer-img">
+
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Avaliable on Bully Store</p>
+                    <h1>Bully And Joker</h1>
+                    <small>This Meme Features Two Guys who just loves Dancing
+                        on the street and don't care about the world.
+                        Be Like Them!!.
+                    </small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--testimonial-->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <p>People Use memes without knowing their origin.
+                        We should use memes properly and in laughing way not in Trash way.
+                    </p>
+                    <img src="if-you-were-good-enough-rip-trash-1984-2007-maybe-bully-63366812.png">
+                    <h3>Eddie Brock</h3>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <p>
+                            I Want Biscuits.
+                        </p>
+                        <img src="doge.jpeg">
+                        <h3>Doge</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <p>
+                            Dont look at it.
+                        </p>
+                        <img src="dontlook.jpeg">
+                        <h3>Dont Look Guy</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="dance3-01.png">
+                    <p>Bully Maguire</p>
+                </div>
+                <div class="col-5">
+                    <img src="meme7.webp">
+                    <p>Escalated Guy</p>
+                </div>
+                <div class="col-5">
+                    <img src="image.0.jpeg">
+                    <p>No Money</p>
+                </div>
+                <div class="col-5">
+                    <img src="more-the-merrier-31380-2.webp">
+                    <p>See Food Meme</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our Memes App</h3>
+                    <p>Download Our App for Android and IOS</p>
+                    <div class="app-logo">
+                        <img src="google-play-app-store-icons-google-play-app-store-icons-editable-vector-illustration-isolated-white-background-123024624.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="dance3-01.png">
+                    <p>Our Purpose Is to Never Deliver these memes to All of You Guys.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons(Just Joking)</li>
+                        <li>Block Post</li>
+                        <li>Return Policy For Memes(Just Joking)</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Github</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+            
+        }
+
+    </script>
+
+
+</body>
+</html>
