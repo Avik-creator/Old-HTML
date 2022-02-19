@@ -1,0 +1,10 @@
+body{
+    background-color: aliceblue;
+}
+
+hr{
+    background-color: grey;
+    border-style: dotted;
+    height: 0px;
+    width: 30%;
+}
